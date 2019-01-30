@@ -250,6 +250,15 @@ episode_df['runtime'].astype('int64')
 tv_show_df['runtime'] = tv_show_df.runtime.str.replace('[^0-9]', '')
 tv_show_df['runtime'].astype('int64')
 
+tv_show_df['start_and_end_year'] = tv_show_df.start_and_end_year.str.replace('[^0-9]', ' ')
+tv_show_df['start_and_end_year'] = tv_show_df.start_and_end_year.str.replace(' ','')
+
+tv_show_df['start_year'] = tv_show_df.start_and_end_year.str.slice(0, 4)
+tv_show_df['end_year'] = tv_show_df.start_and_end_year.str.slice(4, 8)
+tv_show_df['start_year'].astype('int64')
+
+tv_show_df = tv_show_df.drop(columns=['start_and_end_year'])
+
 ##Converting to csv
 
 tv_show_df.to_csv('TV_Show_Entity.csv')
