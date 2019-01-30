@@ -250,10 +250,10 @@ episode_df['runtime'].astype('int64')
 tv_show_df['runtime'] = tv_show_df.runtime.str.replace('[^0-9]', '')
 tv_show_df['runtime'].astype('int64')
 
+##Converting to csv
 
-
-
-
+tv_show_df.to_csv('TV_Show_Entity.csv')
+episode_df.to_csv('Episode_Entity.csv')
 
 
 
