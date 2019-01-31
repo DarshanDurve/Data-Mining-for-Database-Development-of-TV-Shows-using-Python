@@ -179,8 +179,8 @@ y = 1
 # Generating the URL to scrape the data:
 
 for index, row in season_df.iterrows():
-    x = str(row['title_Id'])
-    y = str(row['number'])
+    x = str(row['title_id'])
+    y = str(row['episode_number'])
     url_1 = 'https://www.imdb.com/title/' + x + '/?ref_=ttep_ep' + y
     response = get(url_1)
     html_soup = bs(response.text, 'html.parser')
