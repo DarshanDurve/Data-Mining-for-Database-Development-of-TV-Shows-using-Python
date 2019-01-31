@@ -99,7 +99,7 @@ y = 1
 # Scraping the season data by looping through the webpage:
 # Generating the URL for the maximum number of seasons to scrape the data from:
 
-for index, row in test_df.iterrows():
+for index, row in tv_show_df.iterrows():
     x = str(row['tv_show_id'])
     url_season = 'https://www.imdb.com/title/' + x + '/?ref_=adv_li_tt'
 
@@ -178,7 +178,7 @@ y = 1
 # Scraping the episode data by looping through the webpage:
 # Generating the URL to scrape the data:
 
-for index, row in df.iterrows():
+for index, row in season_df.iterrows():
     x = str(row['title_Id'])
     y = str(row['number'])
     url_1 = 'https://www.imdb.com/title/' + x + '/?ref_=ttep_ep' + y
