@@ -244,8 +244,8 @@ episode_df = episode_df.transpose()
 
 ##Data Cleaning:
 
-episode_df['runtime'] = episode_df.runtime.str.replace('[^0-9]', '')
-episode_df['runtime'].astype('int64')
+episode_df['runtime_in_mins'] = episode_df.runtime_in_mins.str.replace('[^0-9]', '')
+episode_df['runtime_in_mins'].astype('int64')
 
 tv_show_df['runtime'] = tv_show_df.runtime.str.replace('[^0-9]', '')
 tv_show_df['runtime'].astype('int64')

@@ -1,0 +1,5 @@
+https://www.kaggle.com/abhikaggle8/netflix-rating-distributions
+https://stackoverflow.com/questions/18689823/pandas-dataframe-replace-nan-values-with-average-of-columns
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.duplicated.html
+https://github.com/nikbearbrown/INFO_6210
